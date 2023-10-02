@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <script>
+        // String Methods
+        var text = "Hello, Its Namish!";
+        console.log("Original Text:", text);
+        console.log("Length:", text.length);
+        console.log("Uppercase:", text.toUpperCase());
+        console.log("Substring:", text.substring(0, 5));
+        console.log("Replace:", text.replace("World", "Universe"));
+
+        // Number Methods
+        var number = 42.5678;
+        console.log("Original Number:", number);
+        console.log("Fixed to 2 decimal places:", number.toFixed(2));
+        console.log("Rounded to the nearest integer:", Math.round(number));
+        console.log("Square root:", Math.sqrt(number));
+        console.log("Random number between 0 and 1:", Math.random());
+
+        // Array Methods
+        var fruits = ["strawberry", "banana", "blueberry"];
+        console.log("Original Array:", fruits);
+        console.log("Join as string:", fruits.join(", "));
+        console.log("Add to the end:", fruits.push("date"));
+        console.log("Remove from the end:", fruits.pop());
+        console.log("Index of 'banana':", fruits.indexOf("banana"));
+
+        // Date Methods
+        var currentDate = new Date();
+        console.log("Current Date:", currentDate);
+        console.log("Year:", currentDate.getFullYear());
+        console.log("Month:", currentDate.getMonth() + 1);
+        console.log("Day of the Week:", currentDate.getDay());
+        console.log("Formatted Date:", currentDate.toLocaleDateString());
+
+        // Function Methods
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        var sayHello = greet;
+        sayHello("SIT120");
+        var add = function (a, b) {
+            return a + b;
+        };
+        console.log("Addition:", add(10, 23));
+    </script>
+</body>
+</html>
