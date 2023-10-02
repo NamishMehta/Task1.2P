@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+       
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: none;
+            }
+
+            .icon {
+                display: block;
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Design Example</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+    <main>
+            <h2>Welcome to Our Website</h2>
+            <p>
+                This is My Example for Responsive Web Design, Responsive web design means making websites that look and work well on all devices, like computers, tablets, and phones. 
+                It uses clever coding and flexible layouts to adjust to different screen sizes automatically. This way, users can easily read and use the site, no matter how they access it. 
+                It's essential for a great user experience and helps websites rank better in search engines.
+            </p>
+            <img src="example-image.jpg" alt="JAVA">
+            <h3>Our Services</h3>
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+            <h3>Contact Us</h3>
+            <p>
+                If you have any questions or inquiries, please don't hesitate to <a href="contact.html">contact us</a>.
+            </p>
+          </main>
+          <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact Us:</p>
+                    <p>Email: mehtanamish4@icloud.com</p>
+                    <p>Phone: +61 0123 456 789</p>
+                    <p>XYZ Melb, Australia</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 NamishCO. All rights reserved.</p>
+            </div>
+        </footer>
+        
+
+   
+    <script>
+        function toggleNav() {
+            var x = document.querySelector("nav");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
